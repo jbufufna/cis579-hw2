@@ -1,0 +1,45 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Los_Angeles",
+  "enableLogging": true,
+  "projectNumber": 400812083335,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableInteractionLogging": true
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+  
+  },
+  "genAppBuilderSettings": {
+    "engine": "projects/400812083335/locations/global/collections/default_collection/engines/homework-2-chat_1728648136070"
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+  
+  },
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

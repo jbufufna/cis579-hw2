@@ -1,0 +1,76 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3c467846-df26-40a8-8a3c-c72d2d285d5b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "enableGenerativeFallback": true
+    },
+    "name": "180b60da-0fb4-4b4b-8653-9b9d1520c78c"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b47a2c68-2e14-488d-b17e-99ea0347d474"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      }, {
+        "languageCode": "en",
+        "knowledgeInfoCard": {
+          "maximumSnippets": 1
+        }
+      } ]
+    },
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/400812083335/locations/global/collections/default_collection/dataStores/us-constitution_1728649425918",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    } ]
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.69999999,
+    "customConfigKey": "cc0c1283-cb11-435c-927c-131160fc9779",
+    "languageCode": "en"
+  } ]
+}
